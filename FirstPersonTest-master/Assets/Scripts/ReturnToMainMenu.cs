@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ReturnToMainMenu : MonoBehaviour {
     public GameObject currentMenu;
-    public GameObject mainMenu;
+    public GameObject parentMenu;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,7 +14,7 @@ public class ReturnToMainMenu : MonoBehaviour {
         if (Input.GetButtonDown("Back"))
         {
             currentMenu.SetActive(false);
-            mainMenu.SetActive(true);
+            parentMenu.SetActive(true);
         }
     }
 }

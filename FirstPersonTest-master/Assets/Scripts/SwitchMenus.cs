@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SwitchMenus : MonoBehaviour {
     public GameObject destinationMenu;
-    public GameObject mainMenu;
+    public GameObject parentMenu;
 	// Use this for initialization
 	void Start () {
 	
@@ -11,7 +11,7 @@ public class SwitchMenus : MonoBehaviour {
 
     public void onClick()
     {
-        mainMenu.SetActive(false);
+        parentMenu.SetActive(false);
         destinationMenu.SetActive(true);
     }
     // Update is called once per frame
